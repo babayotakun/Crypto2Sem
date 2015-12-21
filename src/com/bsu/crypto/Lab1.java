@@ -100,7 +100,7 @@ public class Lab1 {
             return false;
         }
 
-        // считаем а^(p-1)/n mod p
+        // считаем а^(p-1)/2 mod p
         BigInteger euler = a.modPow(p.subtract(ONE).divide(BigInteger.valueOf(2)), p);
         // p-1 mod p = -1
         if (euler.add(ONE).mod(p).compareTo(BigInteger.ZERO) == 0) {
